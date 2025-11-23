@@ -1,0 +1,71 @@
+/* TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F6F2EC;
+    color: #1B1B1B;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F0E6D2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1B1B1B;
+    font-weight: 600;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #D8A48F;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+}
+
+/* PROJECTS */
+.project {
+    margin-bottom: 40px;
+}
+
+.project img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #F0E6D2;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
