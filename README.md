@@ -10,6 +10,8 @@ The website includes multiple responsive pages and CSS-only interactive elements
 - ## Technologies
 HTML5, CSS3
 
+Add CSS-only hamburger menu for mobile navigation
+
 ## Live Website
 [https://github.com/sadeenabzakh02-maker/portfolio-midterm](https://sadeenabzakh02-maker.github.io/portfolio-midterm/
 )
