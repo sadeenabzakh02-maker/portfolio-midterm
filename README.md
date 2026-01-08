@@ -9,7 +9,8 @@ The website includes multiple responsive pages and CSS-only interactive elements
 - Semantic HTML structure
 - ## Technologies
 HTML5, CSS3
-
+Add README with project overview
+Enable GitHub Pages and add live link
 Add CSS-only hamburger menu for mobile navigation
 Add CSS-only accordion section
 Implement responsive grid layout for work page
