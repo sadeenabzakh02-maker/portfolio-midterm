@@ -12,6 +12,7 @@ HTML5, CSS3
 
 Add CSS-only hamburger menu for mobile navigation
 Add CSS-only accordion section
+Implement responsive grid layout for work page
 
 
 ## Live Website
