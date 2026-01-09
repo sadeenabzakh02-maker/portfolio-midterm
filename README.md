@@ -19,5 +19,4 @@ Improve semantic HTML structure across pages
 
 
 ## Live Website
-[https://github.com/sadeenabzakh02-maker/portfolio-midterm](https://sadeenabzakh02-maker.github.io/portfolio-midterm/
-)
+https://sadeenabzakh02-maker.github.io/portfolio-midterm/
