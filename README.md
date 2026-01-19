@@ -9,6 +9,7 @@ The goal of this project was to practice responsive layout, semantic HTML, and C
 - CSS-only accordion section
 - Grid-based layout for the work page
 - Semantic HTML structure
+- Update homepage layout
 
 ## Technologies
 HTML5, CSS3
