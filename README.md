@@ -10,6 +10,7 @@ The goal of this project was to practice responsive layout, semantic HTML, and C
 - Grid-based layout for the work page
 - Semantic HTML structure
 - Update homepage layout
+- Updated the Projects page by turning project boxes into clickable buttons using Flexbox and anchor links for smoother navigation.
 
 ## Technologies
 HTML5, CSS3
