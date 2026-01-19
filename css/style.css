@@ -1,78 +1,47 @@
-/* TYPOGRAPHY */
+/* =========================
+   TYPOGRAPHY & BASE
+========================= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@300;400;500&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #F6F2EC;
-    color: #1B1B1B;
-    margin: 0;
-    line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  background-color: #F6F2EC;
+  color: #1B1B1B;
+  margin: 0;
+  line-height: 1.6;
 }
 
-/* NAVIGATION 1 */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #F0E6D2;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 21px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #1B1B1B;
-    font-weight: 600;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #D8A48F;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* SECTIONS */
-section {
-    padding: 60px 20px;
-}
-
-/* PROJECTS */
-.project {
-    margin-bottom: 40px;
-}
-
-.project img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 8px;
-}
-
-/* FOOTER */
-footer {
-    background-color: #F0E6D2;
-    padding: 20px;
-    text-align: center;
-    margin-top: 40px;
-}
+/* =========================
+   NAVIGATION
+========================= */
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
+  background-color: #F0E6D2;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1B1B1B;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1B1B1B;
+  font-weight: 600;
 }
 
 #menu-toggle {
@@ -86,18 +55,13 @@ footer {
 }
 
 .hamburger span {
-  height: 3px;
   width: 25px;
+  height: 3px;
   background: #000;
   margin: 4px 0;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
+/* Mobile Nav */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -107,16 +71,75 @@ footer {
     position: absolute;
     top: 70px;
     right: 0;
-    background: white;
-    flex-direction: column;
     width: 100%;
+    background: #F0E6D2;
+    flex-direction: column;
     display: none;
+    padding: 1rem 0;
   }
 
   #menu-toggle:checked + .hamburger + .nav-links {
     display: flex;
   }
 }
+
+/* =========================
+   SECTIONS
+========================= */
+section:not(.hero) {
+  padding: 60px 20px;
+}
+
+/* =========================
+   PROJECT BUTTONS
+========================= */
+.work-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.work-item {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 2px solid #000;
+  border-radius: 8px;
+  color: #000;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.work-item:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* =========================
+   PROJECTS PAGE
+========================= */
+.projects-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project {
+  margin: 2rem auto;
+  max-width: 400px;
+}
+
+.project img {
+  display: block;
+  margin: 0 auto 1rem;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* =========================
+   ACCORDION
+========================= */
 .accordion details {
   margin-bottom: 1rem;
   border-bottom: 1px solid #ccc;
@@ -127,13 +150,74 @@ footer {
   cursor: pointer;
   padding: 0.5rem 0;
 }
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+
+/* =========================
+   ABOUT PAGE
+========================= */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-.work-item {
-  padding: 2rem;
-  border: 1px solid #ddd;
+.about-video {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skills-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.skills-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-container li {
+  margin: 0.5rem 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: #F0E6D2;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+/* HOME PAGE LAYOUT */
+.hero {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 20px;
+}
+.featured-image {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.featured-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.skills {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.featured {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
