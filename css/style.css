@@ -221,3 +221,35 @@ footer {
   margin: 0 auto;
   text-align: center;
 }
+/* =========================
+   POLISH & IMPROVEMENTS
+========================= */
+
+/* Typography hierarchy */
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Better text width for readability */
+p {
+  max-width: 650px;
+  margin: 0 auto 1rem;
+}
+
+/* Image hover interaction */
+.project img,
+.featured-image img {
+  transition: transform 0.3s ease;
+}
+
+.project img:hover,
+.featured-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Accessible focus styles */
+a:focus-visible {
+  outline: 2px solid #D8A48F;
+  outline-offset: 4px;
+}
