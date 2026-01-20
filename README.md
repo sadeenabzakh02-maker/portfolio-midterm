@@ -13,7 +13,7 @@ The goal of this project was to practice responsive layout, semantic HTML, and C
 - Updated the Projects page by turning project boxes into clickable buttons using Flexbox and anchor links for smoother navigation.
 
 ## Technologies
-HTML5, CSS3
+HTML5, CSS3,GitHub Pages
 
 ## Live Website
 https://sadeenabzakh02-maker.github.io/portfolio-midterm/
